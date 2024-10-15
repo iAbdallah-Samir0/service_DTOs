@@ -12,10 +12,14 @@ class PostService
         return Post::all();
     }
 
+
+
     public function getPostById($id)
     {
         return Post::findOrFail($id);
     }
+
+
 
     public function createPost(PostDTO $postDTO)
     {
@@ -25,6 +29,8 @@ class PostService
             'author' => $postDTO->author,
         ]);
     }
+
+
 
     public function updatePost($id, PostDTO $postDTO)
     {
@@ -37,9 +43,12 @@ class PostService
         return $post;
     }
 
+
+
     public function deletePost($id)
     {
         $post = Post::findOrFail($id);
         $post->delete();
     }
+
 }
