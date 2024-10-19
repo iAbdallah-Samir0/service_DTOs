@@ -6,6 +6,8 @@ use App\Models\welcome;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Hash;
+
 
 class WelcomeController extends Controller
 {
@@ -14,7 +16,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        return view('create');
+        return view('welcome');
     }
 
     /**
@@ -30,11 +32,22 @@ class WelcomeController extends Controller
      */
     public function store(Request $request)
     {
-        $welcome = new welcome();
-        $welcome->email = $request->email;
-        $welcome->password = $request->password;
-        $welcome->save();
-        return response('success');
+        $welcome = Welcome::where('email', $request->email)->first();
+
+        if ($welcome) {
+            if (Hash::check($request->password, $welcome->password)) {
+                return response('Login successful');
+            } else {
+                return response('Login failed', 401);
+            }
+        } else {
+            $welcome = new Welcome();
+            $welcome->email = $request->email;
+            $welcome->password = Hash::make($request->password);
+            $welcome->save();
+
+            return response('User registered successfully');
+        }
     }
 
     /**

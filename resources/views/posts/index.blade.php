@@ -8,6 +8,7 @@
 
 
 <a href="{{ route('posts.create') }}">Create New Post</a>
+
 <ul>
     @foreach ($posts as $post)
     <li>
