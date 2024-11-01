@@ -20,6 +20,7 @@ class PostController extends Controller
 
     public function show($id)
     {
+
         $post = Post::find($id);
         if (is_null($post)){
             return response()->json([
