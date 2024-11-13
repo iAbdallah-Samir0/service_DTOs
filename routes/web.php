@@ -18,6 +18,12 @@ use Illuminate\Support\Facades\Route;
 //    return view('welcome');
 //});
 
+
+Route::get('/index', function () {
+//    return view('welcome');
+    return response()->json(['massage' =>'get category']);
+});
+
 Route::resource('/',WelcomeController::class);
 
 Route::resource('posts', PostController::class);

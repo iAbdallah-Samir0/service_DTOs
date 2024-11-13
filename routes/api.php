@@ -34,6 +34,7 @@ Route::group([
 
 
 
+
 Route::get('/posts',[PostController::class,'index']);
 Route::post('/post',[PostController::class,'store']);
 Route::get('/post/{id}',[PostController::class,'show']);
