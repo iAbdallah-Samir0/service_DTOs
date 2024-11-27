@@ -21,10 +21,9 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::group([
-    'middleware' => 'api',
-    'prefix' => 'auth'
-], function ($router) {
+
+
+Route::group(['middleware' => 'api', 'prefix' => 'auth'], function ($router) {
     Route::post('/login', [AuthController::class, 'login']);
     Route::post('/register', [AuthController::class, 'register']);
     Route::post('/logout', [AuthController::class, 'logout']);
@@ -35,10 +34,14 @@ Route::group([
 
 
 
-Route::get('/posts',[PostController::class,'index']);
-Route::post('/post',[PostController::class,'store']);
-Route::get('/post/{id}',[PostController::class,'show']);
-Route::put('/post/{id}',[PostController::class,'update']);
-Route::delete('/post/{id}',[PostController::class,'destroy']);
+Route::middleware(['jwt.verify'])->group(function () {
+    Route::get('/posts',[PostController::class,'index']);
+    Route::post('/post',[PostController::class,'store']);
+    Route::get('/post/{id}',[PostController::class,'show']);
+    Route::put('/post/{id}',[PostController::class,'update']);
+    Route::delete('/post/{id}',[PostController::class,'destroy']);
+});
+
+
 
 
