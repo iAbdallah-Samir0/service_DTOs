@@ -63,44 +63,18 @@
                 </div>
             </div>
 
-{{--            <div class="portfolio-detail">--}}
-{{--                <p class="numb">03</p>--}}
-{{--                <h3>Backend Project</h3>--}}
-{{--                <p>Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project</p>--}}
-{{--                <div class="tech">--}}
-{{--                    <p>PHP , Laravel , MySql</p>--}}
-{{--                </div>--}}
-{{--                <div class="live-github">--}}
-{{--                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>--}}
-{{--                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="portfolio-detail">--}}
-{{--                <p class="numb">04</p>--}}
-{{--                <h3>Backend Project</h3>--}}
-{{--                <p>Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project</p>--}}
-{{--                <div class="tech">--}}
-{{--                    <p>PHP , Laravel , MySql</p>--}}
-{{--                </div>--}}
-{{--                <div class="live-github">--}}
-{{--                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>--}}
-{{--                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-
-{{--            <div class="portfolio-detail">--}}
-{{--                <p class="numb">05</p>--}}
-{{--                <h3>Backend Project</h3>--}}
-{{--                <p>Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project</p>--}}
-{{--                <div class="tech">--}}
-{{--                    <p>PHP , Laravel , MySql</p>--}}
-{{--                </div>--}}
-{{--                <div class="live-github">--}}
-{{--                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>--}}
-{{--                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>--}}
-{{--                </div>--}}
-{{--            </div>--}}
+            <div class="portfolio-detail">
+                <p class="numb">03</p>
+                <h3>Backend Project</h3>
+                <p>Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project Backend Project</p>
+                <div class="tech">
+                    <p>PHP , Laravel , MySql</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
         </div>
 
         <div class="portfolio-box">
@@ -112,15 +86,9 @@
                     <div class="img-item">
                         <img src="{{asset('assets/img/hos_sys_2.png')}}" alt="">
                     </div>
-{{--                    <div class="img-item">--}}
-{{--                        <img src="{{asset('assets/img/hos_sys_3.png')}}" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="img-item">--}}
-{{--                        <img src="{{asset('assets/img/hos_sys_4.png')}}" alt="">--}}
-{{--                    </div>--}}
-{{--                    <div class="img-item">--}}
-{{--                        <img src="{{asset('assets/img/hos_sys_5.png')}}" alt="">--}}
-{{--                    </div>--}}
+                    <div class="img-item">
+                        <img src="{{asset('assets/img/hos_sys_3.png')}}" alt="">
+                    </div>
                 </div>
 
                 <div class="navigation">
