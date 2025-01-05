@@ -8,6 +8,7 @@
     <title>Portfolio | Home</title>
     <!-- boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="icon" href="{{asset('assets/ico/favicon.png')}}" type="image/x-icon">
     <!-- custom css -->
     <link rel="stylesheet" href="{{asset('assets/css/style_resume.css')}}">
@@ -124,7 +125,7 @@
                             <span>PHP</span>
                         </div>
                         <div class="resume-item">
-                            <i class="bx bxl-laravel"></i>
+                            <i class="fab fa-laravel"></i>
                             <span>Laravel</span>
                         </div>
                         <div class="resume-item">
@@ -138,6 +139,10 @@
                         <div class="resume-item">
                             <i class='bx bxs-data' ></i>
                             <span>MYSQL</span>
+                        </div>
+                        <div class="resume-item">
+                            <i class='bx bxs-data' ></i>
+                            <span>Datagrip</span>
                         </div>
                     </div>
                 </div>

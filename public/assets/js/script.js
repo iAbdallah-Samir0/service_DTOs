@@ -41,12 +41,12 @@ const activePortfolio = () => {
 }
 
 arrowRight.addEventListener('click', () => {
-    if (index < 3) {
+    if (index < 1) {
         index++;
         arrowLeft.classList.remove('disabled');
     } else {
-        index = 4;
-        arrowRight.classList.add('disabled');
+        index = 1;
+        // arrowRight.classList.add('disabled');
     }
     activePortfolio();
 });
