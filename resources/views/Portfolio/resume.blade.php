@@ -25,7 +25,7 @@
         <a href="{{route('portfolio.services')}}" class="">Services</a>
         <a href="{{route('portfolio.resume')}}" class="">Resume</a>
         <a href="{{route('portfolio.portfolio')}}" class="">Portfolio</a>
-        <a href="" class="">Contact</a>
+        <a href="{{route('portfolio.contact')}}" class="">Contact</a>
     </nav>
 </header>
 <!--end header-->
@@ -129,6 +129,10 @@
                             <span>Laravel</span>
                         </div>
                         <div class="resume-item">
+                            <i class='bx bxs-cake'></i>
+                            <span>CakePHP</span>
+                        </div>
+                        <div class="resume-item">
                             <i class="bx bxl-github"></i>
                             <span>Github</span>
                         </div>
@@ -140,10 +144,10 @@
                             <i class='bx bxs-data' ></i>
                             <span>MYSQL</span>
                         </div>
-                        <div class="resume-item">
-                            <i class='bx bxs-data' ></i>
-                            <span>Datagrip</span>
-                        </div>
+{{--                        <div class="resume-item">--}}
+{{--                            <i class='bx bxs-data' ></i>--}}
+{{--                            <span>Datagrip</span>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
@@ -191,7 +195,7 @@
                             <p>Languages:<span>Arabic,English</span></p>
                         </div>
                         <div class="resume-item">
-                            <p>Phone:<span>(+20) 01155331309</span></p>
+                            <p>Phone:<span>(+20) 011 5533 1309</span></p>
                         </div>
                         <div class="resume-item">
                             <p>Email:<span>abdallahsamir370@gmail.com</span></p>

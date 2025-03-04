@@ -25,4 +25,9 @@ class PortfolioController extends Controller
     {
         return view('Portfolio.portfolio');
     }
+
+    public function contact()
+    {
+        return view('Portfolio.contact');
+    }
 }

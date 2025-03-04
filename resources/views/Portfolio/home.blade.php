@@ -24,7 +24,7 @@
         <a href="{{route('portfolio.services')}}" class="">Services</a>
         <a href="{{route('portfolio.resume')}}" class="">Resume</a>
         <a href="{{route('portfolio.portfolio')}}" class="">Portfolio</a>
-        <a href="" class="">Contact</a>
+        <a href="{{route('portfolio.contact')}}" class="">Contact</a>
     </nav>
 </header>
 <!--end header-->
