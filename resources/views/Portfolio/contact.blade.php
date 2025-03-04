@@ -35,7 +35,8 @@
     <div class="contact-container">
         <div class="contact-box">
             <h2>Let's Work Together</h2>
-            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, voluptatem illo magni similique velit at mollitia corporis quaerat eaque asperiores.</p>
+            <p class="desc">If you are interested in working with me as a  PHP Back-end Developer Laravel , please reach out to me.
+                For contact, you can message me via ...</p>
             <div class="contact-detail">
                 <i class='bx bxs-phone'></i>
                 <div class="detail">
