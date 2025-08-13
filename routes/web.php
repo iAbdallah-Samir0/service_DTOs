@@ -50,5 +50,5 @@ Route::post('/send-email', function (Request $request) {
         'message' => 'required|string',
     ]);
     Mail::to('abdallahsamir370@gmail.com')->send(new ContactMail($data));
-    return back()->with('success', 'تم إرسال رسالتك بنجاح!');
+    return back()->with('success', 'Your message has been sent successfully!');
 })->name('send.email');

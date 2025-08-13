@@ -78,18 +78,19 @@
             @if(session('success'))
                 <div style="color: green; font-weight: bold;">{{ session('success') }}</div>
             @endif
-            <form action="/send-email" method="POST">
-                @csrf
-                <h2 class="heading">Contact <span>Me!</span></h2>
-                <div class="field-box">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="text" placeholder="Phone Number" required>
-                    <input type="text" placeholder="Email Subject" required>
-                    <textarea name="" id="" placeholder="Your Message" required></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+                <form action="{{ route('send.email') }}" method="POST">
+                    @csrf
+                    <h2 class="heading">Contact <span>Me!</span></h2>
+                    <div class="field-box">
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="phone" placeholder="Phone Number" required>
+                        <input type="text" name="subject" placeholder="Email Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+
         </div>
     </div>
 </section>

@@ -20,9 +20,11 @@ class ContactMail extends Mailable
 
     public function build()
     {
-        return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
+        return $this->from(env('MAIL_FROM_ADDRESS'), $this->data['name'])
+            ->replyTo($this->data['email'], $this->data['name'])
             ->subject($this->data['subject'])
-            ->view('Portfolio.emails.contact')
+            ->view('Portfolio.emails.contact_mail')
             ->with('data', $this->data);
     }
+
 }
