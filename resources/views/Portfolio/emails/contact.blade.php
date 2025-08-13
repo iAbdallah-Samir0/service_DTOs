@@ -15,8 +15,20 @@
 
 <body>
 
+
+<!-- bars background -->
+<div class="bars-box active">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+</div>
+
+
 <!--start header-->
-<header>
+<header class="active">
     <a href="{{route('portfolio.home')}}" class="logo">Portfolio.</a>
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav>
@@ -24,7 +36,7 @@
         <a href="{{route('portfolio.services')}}" class="">Services</a>
         <a href="{{route('portfolio.resume')}}" class="">Resume</a>
         <a href="{{route('portfolio.portfolio')}}" class="">Portfolio</a>
-        <a href="{{route('portfolio.contact')}}" class="">Contact</a>
+        <a href="{{route('portfolio.emails.contact')}}" class="">Contact</a>
     </nav>
 </header>
 <!--end header-->
@@ -63,7 +75,11 @@
         </div>
 
         <div class="contact-box">
-            <form action="">
+            @if(session('success'))
+                <div style="color: green; font-weight: bold;">{{ session('success') }}</div>
+            @endif
+            <form action="/send-email" method="POST">
+                @csrf
                 <h2 class="heading">Contact <span>Me!</span></h2>
                 <div class="field-box">
                     <input type="text" placeholder="Full Name" required>

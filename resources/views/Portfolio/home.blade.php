@@ -16,7 +16,7 @@
 <body>
 
 <!--start header-->
-<header>
+<header class="active">
     <a href="{{route('portfolio.home')}}" class="logo">Portfolio.</a>
     <i class="bx bx-menu" id="menu-icon"></i>
     <nav>
@@ -24,10 +24,21 @@
         <a href="{{route('portfolio.services')}}" class="">Services</a>
         <a href="{{route('portfolio.resume')}}" class="">Resume</a>
         <a href="{{route('portfolio.portfolio')}}" class="">Portfolio</a>
-        <a href="{{route('portfolio.contact')}}" class="">Contact</a>
+        <a href="{{route('portfolio.emails.contact')}}" class="">Contact</a>
     </nav>
 </header>
 <!--end header-->
+
+
+<!-- bars background -->
+<div class="bars-box active">
+    <div class="bar" style="--i:6;"></div>
+    <div class="bar" style="--i:5;"></div>
+    <div class="bar" style="--i:4;"></div>
+    <div class="bar" style="--i:3;"></div>
+    <div class="bar" style="--i:2;"></div>
+    <div class="bar" style="--i:1;"></div>
+</div>
 
 
 <!--start Home Section -->
@@ -69,12 +80,8 @@
 
 
 
-
-
-
 <!-- custom js -->
 <script src="{{asset('assets/js/script.js')}}"></script>
 
 </body>
-
 </html>

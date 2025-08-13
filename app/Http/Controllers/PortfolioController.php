@@ -28,6 +28,6 @@ class PortfolioController extends Controller
 
     public function contact()
     {
-        return view('Portfolio.contact');
+        return view('Portfolio.emails.contact');
     }
 }
