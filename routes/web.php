@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\WelcomeController;
@@ -41,14 +42,4 @@ Route::get('/portfolio-services', [PortfolioController::class, 'services'])->nam
 Route::get('/portfolio-resume', [PortfolioController::class, 'resume'])->name('portfolio.resume');
 Route::get('/portfolio-portfolio', [PortfolioController::class, 'portfolio'])->name('portfolio.portfolio');
 Route::get('/portfolio-contact', [PortfolioController::class, 'contact'])->name('portfolio.emails.contact');
-Route::post('/send-email', function (Request $request) {
-    $data = $request->validate([
-        'name' => 'required|string',
-        'email' => 'required|email',
-        'phone' => 'required|string',
-        'subject' => 'required|string',
-        'message' => 'required|string',
-    ]);
-    Mail::to('abdallahsamir370@gmail.com')->send(new ContactMail($data));
-    return back()->with('success', 'Your message has been sent successfully!');
-})->name('send.email');
+Route::post('/send-email', [ContactController::class, 'sendEmail'])->name('send.email');
