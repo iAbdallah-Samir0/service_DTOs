@@ -63,7 +63,7 @@
                 <p class="desc">As a developer with an academic background in Computer Science, I have extensive experience in building high-quality software applications. I focus on delivering innovative solutions that meet clients' needs with precision and professionalism.</p><br>
                 <div class="resume-list">
                     <div class="resume-item">
-                        <p class="year">MAY 2024 – OCT 2024</p>
+                        <p class="year">MAY 2024 – JULY 2025</p>
                         <h3>Backend Developer</h3>
                         <p class="company">Qortova.</p>
                         <p>Developed and maintained server-side logic using CakePHP framework and PHP.</p>
