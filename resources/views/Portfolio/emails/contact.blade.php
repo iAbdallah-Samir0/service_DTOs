@@ -74,11 +74,42 @@
             </div>
         </div>
 
+
         <div class="contact-box">
             @if(session('success'))
-                <div style="color: green; font-weight: bold;">{{ session('success') }}</div>
+                <div id="flash-message" style="
+            color: black;
+            font-weight: bold;
+            font-size: 2rem;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: yellow;
+            padding: 1rem 2rem;
+            border-radius: 0.6rem;
+            box-shadow: 0 0.2rem 0.6rem rgba(0,0,0,0.2);
+            opacity: 1;
+            transition: opacity 1s ease;
+            z-index: 9999;
+            text-align: center;
+          ">
+                    {{ session('success') }}
+                </div>
+
+                <script>
+                    setTimeout(function() {
+                        var msg = document.getElementById('flash-message');
+                        if (msg) {
+                            msg.style.opacity = '0';
+                            setTimeout(() => msg.remove(), 500);
+                        }
+                    }, 4000);
+                </script>
             @endif
-                <form action="{{ route('send.email') }}" method="POST">
+
+
+            <form action="{{ route('send.email') }}" method="POST">
                     @csrf
                     <h2 class="heading">Contact <span>Me!</span></h2>
                     <div class="field-box">
