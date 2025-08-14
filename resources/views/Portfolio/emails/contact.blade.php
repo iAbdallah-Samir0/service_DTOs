@@ -50,28 +50,37 @@
             <p class="desc">If you are interested in working with me as a  PHP Back-end Developer Laravel , please reach out to me.
                 For contact, you can message me via ...</p>
             <div class="contact-detail">
-                <i class='bx bxs-phone'></i>
-                <div class="detail">
-                    <p>Phone</p>
-                    <p>(+20) 11 5533 1309</p>
-                </div>
+                <a href="tel:+201155331309" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class='bx bxs-phone'></i>
+                    <div class="detail">
+                        <p>Phone</p>
+                        <p>(+20) 11 5533 1309</p>
+                    </div>
+                </a>
             </div>
 
-            <div class="contact-detail">
-                <i class='bx bxs-envelope'></i>
-                <div class="detail">
-                    <p>Email</p>
-                    <p>abdallahsamir370@gmail.com</p>
-                </div>
-            </div>
 
             <div class="contact-detail">
-                <i class='bx bxs-map'></i>
-                <div class="detail">
-                    <p>Address</p>
-                    <p>Soubra-Cairo-Egypt</p>
-                </div>
+                <a href="mailto:abdallahsamir370@gmail.com" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class='bx bxs-envelope'></i>
+                    <div class="detail">
+                        <p>Email</p>
+                        <p>abdallahsamir370@gmail.com</p>
+                    </div>
+                </a>
             </div>
+
+
+            <div class="contact-detail">
+                <a href="https://www.google.com/maps/search/Soubra+Cairo+Egypt" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+                    <i class='bx bxs-map'></i>
+                    <div class="detail">
+                        <p>Address</p>
+                        <p>Soubra-Cairo-Egypt</p>
+                    </div>
+                </a>
+            </div>
+
         </div>
 
 
